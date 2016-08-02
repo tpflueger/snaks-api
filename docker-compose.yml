@@ -1,0 +1,10 @@
+version: "2"
+services:
+  api:
+    build: .
+    volumes:
+      - ./config:/code/config
+      - ./lib:/code/lib
+      - ./web:/code/web
+    ports:
+      - "4000:4000"
